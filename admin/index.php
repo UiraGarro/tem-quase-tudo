@@ -1,16 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Tem Quase Tudo - Administração</title>
 </head>
 <body>
-
-<h1>Painel de Administração</h1>
-
-<ul>
-    <li><a href="cadastrar_produto.php">Adicionar Produto</a></li>
-    <li><a href="listar_produtos.php">Listar Produtos</a></li>
-</ul>
-
+    <li><a href="produtos/index.php">Administar Produtos</a></li>
+    <li><a href="clientes/index.php">Administar Clientes</a></li>
 </body>
 </html>

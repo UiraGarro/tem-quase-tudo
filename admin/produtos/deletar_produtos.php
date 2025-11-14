@@ -1,5 +1,5 @@
 <?php
-    require_once("config.inc.php");
+    require_once("../config.inc.php");
 
     $query = "DELETE FROM produtos WHERE id = " . $_GET['id'];
     if (mysqli_query($conexao, $query)) {
