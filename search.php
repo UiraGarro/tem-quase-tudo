@@ -40,9 +40,15 @@ $q = isset($_GET['q']) ? trim(strip_tags($_GET['q'])) : '';
         echo '<p>' . count($results) . ' produto(s) encontrado(s):</p>';
         echo '<ul>';
         foreach ($results as $r) {
-          echo '<li>' . htmlspecialchars($r['name']) . ' - R$ ' . number_format($r['price'], 2, ',', '.') . ' (' . htmlspecialchars($r['category']) . ')</li>';
+          echo '<li>';
+          echo '<strong>' . htmlspecialchars($r['name']) . '</strong><br>';
+          echo 'Preço: R$ ' . number_format($r['price'], 2, ',', '.') . '<br>';
+          echo 'Descrição: ' . htmlspecialchars($r['description']) . '<br>';
+          echo 'Categoria: ' . htmlspecialchars($r['category']);
+          echo '</li><br>';
         }
         echo '</ul>';
+        echo '<p><a href="index.php">&larr; Voltar para busca</a></p>';
       }
     }
     ?>
