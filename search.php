@@ -31,7 +31,7 @@ $q = isset($_GET['q']) ? trim(strip_tags($_GET['q'])) : '';
     }
 
     if ($q === '') {
-      echo '<p>A busca ainda não foi usada. Digite algo no campo de busca.</p>';
+      echo '<p>A busca ainda não foi usada. Digite algo no campo de busca (ex: camiseta) e pressione Enter.</p>';
     } else {
       echo '<p>Resultados para: <strong>' . htmlspecialchars($q) . '</strong></p>';
       if (count($results) === 0) {
