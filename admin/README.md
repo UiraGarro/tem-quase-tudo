@@ -40,22 +40,6 @@ Além disso, haverá uma **área administrativa** destinada ao gerenciamento de 
 O projeto terá foco na **usabilidade**, **organização do código** e no funcionamento básico das operações **CRUD (Create, Read, Update, Delete)**.
 
 ---
-## Código SQL para criar o banco de dados do projeto
-```
-CREATE DATABASE tem_quase_tudo_db;
-USE tem_quase_tudo_db;
-
-CREATE TABLE produtos (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    produto VARCHAR(100) NOT NULL,
-    descricao TEXT,
-    preco DECIMAL(10,2) NOT NULL,
-    estoque INT NOT NULL DEFAULT 0,
-    desconto DECIMAL(5,2) NOT NULL DEFAULT 0, -- porcentagem de desconto
-    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
----
 
 ## Equipe
 

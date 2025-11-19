@@ -1,6 +1,4 @@
 <?php
-// Ler a query 'q' da URL (ex: search.php?q=camiseta)
-// Usamos strip_tags e trim para deixar simples e seguro para iniciantes.
 $q = isset($_GET['q']) ? trim(strip_tags($_GET['q'])) : '';
 ?>
 
@@ -15,11 +13,9 @@ $q = isset($_GET['q']) ? trim(strip_tags($_GET['q'])) : '';
 <body>
   <main>
     <?php
-    // Tentar carregar uma lista de produtos simples se o arquivo existir
     $results = [];
     if (file_exists(__DIR__ . '/includes/products.php')) {
       include __DIR__ . '/includes/products.php';
-      // $products deve existir no arquivo incluído (array simples)
       if ($q !== '') {
         foreach ($products as $p) {
           $hay = $p['name'] . ' ' . $p['description'];
