@@ -54,6 +54,16 @@ CREATE TABLE produtos (
     desconto DECIMAL(5,2) NOT NULL DEFAULT 0, -- porcentagem de desconto
     criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE clientes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  senha VARCHAR(100) NOT NULL,
+  telefone VARCHAR(50),
+  endereco VARCHAR(255),
+  cidade VARCHAR(100)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
 ---
 
