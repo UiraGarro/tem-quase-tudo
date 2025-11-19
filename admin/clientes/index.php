@@ -12,5 +12,6 @@
     <li><a href="listar_cliente.php">Listar Cliente</a></li>
 </ul>
 
+    <li><a href="../index.php">Voltar ao Painel Principal</a></li>
 </body>
 </html>
